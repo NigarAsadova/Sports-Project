@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trebuchet MS'), url('trebuc.woff') format('woff');
+}
+
+body{
+    margin: 0;
+    font-family: arial, 'helvetica neue', helvetica, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --mainGray: #555659;
+    --mainPink: #ef8a90;
+    --mainBlack: #333333;
+}
+
+.main-container{
+    background-color: #EFEFEF;
+    padding: 20px 0 10px;
+}
+
+.all-elements{
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+
+}
+
+/*Header part where are preheader text and Trouble viewing this email? */
+
+.pre-header{
+    display: flex;
+    justify-content: space-between;    
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.help-text{
+    margin: 0;
+    color: var(--mainGray);
+    font-size: 12px;
+}
+
+.help-text a{
+    font-weight: bold;
+    color: var(--mainBlack);
+
+}
+
+/* Sport photo and navbar */
+
+.species-of-products nav{
+    background-color: var(--mainGray);
+}
+
+.species-list{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.sport-img{
+    height: 51px;
+    width: 104px; 
+    margin: auto;
+    padding: 10px 5px 15px;
+    box-sizing:content-box;
+}
+
+.sport-img img{
+    width: 100%;
+}
+
+.species-list li{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    flex-basis: calc(100% / 3);
+    text-align: center;
+    border-right: 1px solid #fff;
+    font-weight: bold;
+}
+
+.species-list li:last-child{
+    border: none;
+}
+
+/* Thanks Mom part */
+
+.thank-you-content{
+    background-image: url(../img/flowers.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center -54px;
+   position: relative;
+}
+
+.thank-you-mom{
+    position: absolute;
+    top: 75px;
+    left: 240px;
+}
+
+.thank-you-mom h1{
+    font-size: 36px;
+    font-family: "Lora", serif;
+    font-weight: lighter;
+    font-style: italic;
+    color: #029d76;
+    margin: 0;
+    position: relative;
+    top: 28px;
+    left: 110px;
+    text-transform: capitalize;
+}
+
+.mom-logo{
+    width: 360px;
+    height: 180px;
+}
+
+.mom-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.message-for-mom{
+    padding: 5px 40px 0;
+    text-align: center;
+    color: #999999;
+}
+
+/* Sport product part */
+
+.sport-clothes-main-title{
+    color: var(--mainPink);
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-weight: 200;
+    font-size: 26px;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 30px 20px 5px;
+}
+
+.product-container{
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 20px;
+}
+
+.sport-product{
+    width: 248px;
+    border: 1px solid #fcd5d7;
+    transition: all .2s ease-in-out;
+}
+
+.sport-product:hover{
+    transform: scale(1.1);
+}
+
+.sport-product p{
+    margin: 0;
+}
+
+.product-title{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--mainBlack);
+    margin: 0;
+    padding: 10px 10px 0;
+}
+
+.product-info{
+    color: #666666;
+    text-align: center;
+    padding: 5px 10px 10px;
+    font-size: 14px;
+}
+
+.product-price{
+    color: #b6b6b6;
+    padding: 0 10px 15px;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.buy-now-button{
+    text-align: center;
+}
+
+.buy-now:hover{
+    background-color: var(--mainPink);
+    color: #f0f0f0;
+}
+
+.buy-now{
+    text-decoration: none;
+    color: var(--mainPink);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    display: block;
+    padding: 10px 5px;
+    transition: all .4s ease-in-out;
+}
+
+.product-image img{
+    width: 100%;
+}
+
+/* Social media accounts and copyright part */
+
+.contact-info, footer{
+    background-color: #EFEFEF;
+}
+
+.contact-info{
+    padding: 10px 20px 0;
+}
+
+.social-media-logo{
+    width: 32px;
+    height: 32px;
+}
+
+.social-media-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 0 10px;
+    border-top: 1px solid #cccccc;
+    margin-top: 10px;
+}
+
+.unsubscribe-here, .copyright-text{
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Footer part */
+
+footer{
+    padding: 30px 20px;
+}
+
+.stripo-logo{
+    height: 56px;
+    width: 125px;
+    margin: auto;
+}
+
+.stripo-logo img{
+    width: 100%;
+}
